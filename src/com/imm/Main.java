@@ -11,7 +11,7 @@ public class Main {
         BubbleSort.sort(array);
         System.out.println(Arrays.toString(array));
 
-        SelectionSort.sort(array);
+        SelectionSorts.sort(array);
         System.out.println(Arrays.toString(array));
 
 
