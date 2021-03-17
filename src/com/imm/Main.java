@@ -14,8 +14,12 @@ public class Main {
 //        SelectionSort.sort(array);
 //        System.out.println(Arrays.toString(array));
 
-        InsertionSort.sort(array);
+//        InsertionSort.sort(array);
+//        System.out.println(Arrays.toString(array));
+
+        MergeSort.sort(array);
         System.out.println(Arrays.toString(array));
+
 
     }
 
