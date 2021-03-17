@@ -1,9 +1,18 @@
 package com.imm;
 
 public class MergeSort {
+    //Divide and conquor Algorithm
+    //Requires Additional memory to merge into brand new array
+
     //1.Divide this array in to half
     //2.Recursively sort each half
     //3.Merge the results
+
+    //    [4,2,1]
+    //     /   \
+    //Left [4] right [2,1]
+    //           /    \
+    //       left[2] right[1]    result[1,2]
 
     public static void sort(int[] array) {
         System.out.println("at sort");

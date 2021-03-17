@@ -6,7 +6,7 @@ import java.util.Set;
 public class Main {
 
     public static void main(String[] args) {
-	    int [] array = {1,2,0,2};
+	    int [] array = {4,2,1};
 
 //        BubbleSort.sort(array);
 //        System.out.println(Arrays.toString(array));
