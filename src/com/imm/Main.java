@@ -17,7 +17,9 @@ public class Main {
 //        InsertionSort.sort(array);
 //        System.out.println(Arrays.toString(array));
 
-        MergeSort.sort(array);
+//        MergeSort.sort(array);
+//        System.out.println(Arrays.toString(array));
+        QuickSort.sort(array);
         System.out.println(Arrays.toString(array));
 
 
