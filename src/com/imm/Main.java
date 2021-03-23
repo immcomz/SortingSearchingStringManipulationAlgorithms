@@ -20,7 +20,10 @@ public class Main {
 //        MergeSort.sort(array);
 //        System.out.println(Arrays.toString(array));
 
-        CountingSort.sort(array,4);
+//        CountingSort.sort(array,4);
+//        System.out.println(Arrays.toString(array));
+
+        BucketSort.sort(array,4);
         System.out.println(Arrays.toString(array));
 
     }
