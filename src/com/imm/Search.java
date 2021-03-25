@@ -39,4 +39,20 @@ public class Search {
 
      }
 
+    public int binarySearchIterative(int[] array, int target) {
+        var left = 0;
+        var right = array.length - 1;
+
+        while (left <= right) { //until partition array is empty
+            var middle = (left + right) / 2;
+
+            if (array[middle] == target)// if found
+                return middle;
+
+            if (target < array[middle])
+                right = middle - 1; // target at the left
+            else
+                left = middle + 1; // target at the right
+        }
+    }
 }
