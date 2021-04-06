@@ -87,4 +87,23 @@ public class Search {
         //result in between mid1 and mid 2
         return ternarySearch(array, target, mid1 + 1, mid2 - 1);
     }
+
+    public int jumpSearch(int[] array, int target) {
+        int blockSize = (int) Math.sqrt(array.length);
+        int start = 0;
+        int next = blockSize;
+
+        while (start < array.length && array[next - 1] < target) {// go the next block
+            start = next;
+            next += blockSize;
+
+            if (next > array.length) next = array.length; //if next become too big
+        }
+
+        for (var i = start; i < next; i++) //jump in to block and find the element
+            if (array[i] == target)
+                return i;
+
+        return -1;
+    }
 }
