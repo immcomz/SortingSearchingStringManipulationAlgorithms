@@ -95,7 +95,7 @@ public class Search {
 
         while (start < array.length && array[next - 1] < target) {// go the next block
             start = next;
-            next += blockSize;
+            next += blockSize; // next = next + blockSize
 
             if (next > array.length) next = array.length; //if next become too big
         }
@@ -105,5 +105,19 @@ public class Search {
                 return i;
 
         return -1;
+    }
+
+    public int exponentialSearch(
+            int[] array, int target) {
+
+        int bound = 1;
+        while (bound < array.length &&
+                array[bound] < target)// limit bound < array.length and target > current bound
+            bound *= 2;
+
+        int left = bound / 2; // previous bound
+        int right = Math.min(bound, array.length - 1); // if bound out of the array length
+
+        return binarySearchRecursive(array, target, left, right);
     }
 }
